@@ -1,0 +1,2 @@
+I have done 3 experiment used btn for the botton in withdraw and deposite option.
+in css kept background in white. Justified content on center.kept the cursor as pointer.
