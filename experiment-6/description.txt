@@ -16,13 +16,13 @@ ctx = canvas.getContext('2d') enables 2D drawing.
 
 A boolean drawing tracks whether the mouse is pressed.
 
-onmousedown starts a new path and moves the pen to mouse position.
+on mouse down starts a new path and moves the pen to mouse position.
 
-onmousemove draws lines while the mouse is pressed.
+on mouse move draws lines while the mouse is pressed.
 
-onmouseup stops drawing when the mouse button is released.
+on mouse up stops drawing when the mouse button is released.
 
-onmouseout also stops drawing when the cursor leaves the canvas.
+on mouse out also stops drawing when the cursor leaves the canvas.
 
 clearCanvas() erases everything using clearRect().
 
