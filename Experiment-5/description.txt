@@ -1,0 +1,29 @@
+The page is an HTML document with a <head> and <body>.
+
+The title of the page is "Product Filter".
+
+There’s a heading <h2> that says "Product List".
+
+A <select> dropdown menu allows users to choose a category.
+
+The dropdown has 4 options: All, Clothing, Electronics, Books.
+
+A <div> with id="products" displays the product list.
+
+An array items holds objects with name (product name) and cat (category).
+
+Products include T-Shirt, Jeans, Headphones, Smartphone, Novel, Cookbook.
+
+The function showList(cat) controls which products are shown.
+
+productsDiv.innerHTML = '' clears the product display before showing new items.
+
+forEach() loops through all products in the items array.
+
+If cat is "all" or matches the product category, a new <div> is created for that product.
+
+The created product <div> has inline styles: border, margin, padding.
+
+The dropdown triggers showList() with the chosen category when changed (addEventListener).
+
+showList('all') runs on page load, showing all products first.
