@@ -28,4 +28,8 @@ main – The main content section of the page.
 h3 – A smaller heading, usually for sub-titles.
 p – A paragraph of text.
 footer – The bottom section of the page, often for copyright or extra info.
+<<<<<<< HEAD
 html (end) – Marks the end of the HTML document
+=======
+html (end) – Marks the end of the HTML document.
+>>>>>>> 4e17a7793ece39ef02dc5890e200530dabc7d864

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+<<<<<<< HEAD
 
 <!-- Dark mode toggle checkbox -->
 <input type="checkbox" id="darkModeToggle">
@@ -35,3 +36,34 @@
 
 </body>
 </html>
+=======
+    <header>
+        <h2>Admin Dashboard</h2>
+        <label>
+            <input type="checkbox" id="darkModeToggle"/>
+            Dark Mode
+        </label>
+    </header>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Welcome, Admin!</h3>
+        <p>This is the main content area. Add charts, tables, or reports here.</p>
+    </main>
+    <footer>
+        © 2025 Admin Panel
+    </footer>
+    <script>
+        document.getElementById("darkModeToggle").onchange= function(){
+            document.body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>
+>>>>>>> 4e17a7793ece39ef02dc5890e200530dabc7d864
