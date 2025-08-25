@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product List Filter</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Product Filter</title>
 </head>
 <body>
-  <div class="product-list">
-    <h2>Product List</h2>
-    <label for="category">Filter by Category:</label>
-    <select id="category">
+  <h2>Product List</h2>
+  <label>Filter by Category:
+    <select id="filter">
       <option value="all">All</option>
       <option value="clothing">Clothing</option>
       <option value="electronics">Electronics</option>
       <option value="books">Books</option>
     </select>
-
-    <div class="product" data-category="clothing">T-Shirt</div>
-    <div class="product" data-category="clothing">Jeans</div>
-    <div class="product" data-category="electronics">Headphones</div>
-    <div class="product" data-category="electronics">Smartphone</div>
-    <div class="product" data-category="books">Novel</div>
-    <div class="product" data-category="books">Cookbook</div>
-  </div>
-
-  <script src="script.js"></script>
+  </label>
+  <div id="products"></div>
+  <script>
+    const items = [
+      { name: "T-Shirt",    cat: "clothing" },
+      { name: "Jeans",      cat: "clothing" },
+      { name: "Headphones", cat: "electronics" },
+      { name: "Smartphone", cat: "electronics" },
+      { name: "Novel",      cat: "books" },
+      { name: "Cookbook",   cat: "books" }
+    ];
+    const productsDiv = document.getElementById('products');
+    const filter = document.getElementById('filter');
+    function showList(cat) {
+      productsDiv.innerHTML = '';
+      items.forEach(item => {
+        if (cat === 'all' || item.cat === cat) {
+          let box = document.createElement('div');
+          box.textContent = item.name;
+          box.style.border = "1px solid #ccc";
+          box.style.margin = "6px 0";
+          box.style.padding = "10px";
+          productsDiv.appendChild(box);
+        }
+      });
+    }
+    filter.addEventListener('change', e => showList(e.target.value));
+    showList('all');
+  </script>
 </body>
 </html>
