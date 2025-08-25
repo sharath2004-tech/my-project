@@ -6,13 +6,7 @@
   --footer-bg: #4CAF50;
 }
 
-body.dark {
-  --bg-color: #1e1e1e;
-  --text-color: #f1f1f1;
-  --header-bg: #333;
-  --sidebar-bg: #2e2e2e;
-  --footer-bg: #333;
-}
+/* Default layout */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -26,6 +20,15 @@ body {
     "sidebar main"
     "footer footer";
   height: 100vh;
+}
+
+/* Hide checkbox from layout but still keep it visible */
+#darkModeToggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 header {
@@ -44,11 +47,11 @@ header {
   padding: 20px;
 }
 
-
 main {
   grid-area: main;
   padding: 20px;
 }
+
 footer {
   grid-area: footer;
   background-color: var(--footer-bg);
@@ -56,6 +59,7 @@ footer {
   color: white;
   padding: 10px;
 }
+
 #sidebar ul {
   list-style-type: disc;  
   padding-left: 20px;     
@@ -64,6 +68,7 @@ footer {
 #sidebar li {
   margin-bottom: 10px;
 }
+
 #sidebar a {
   display: block;
   margin-bottom: 10px;
@@ -72,10 +77,29 @@ footer {
   cursor: pointer;
 }
 
-body.dark #sidebar a {
+/* ---------- DARK MODE USING ONLY CSS ---------- */
+#darkModeToggle:checked ~ header {
+  background-color: #333;
+}
+
+#darkModeToggle:checked ~ #sidebar {
+  background-color: #2e2e2e;
+}
+
+#darkModeToggle:checked ~ #sidebar a {
   color: lightblue;
 }
 
-#darkModeToggle {
-  cursor: pointer;
+#darkModeToggle:checked ~ main {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+#darkModeToggle:checked ~ footer {
+  background-color: #333;
+}
+
+#darkModeToggle:checked ~ body {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
 }

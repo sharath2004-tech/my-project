@@ -7,32 +7,31 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header>
-        <h2>Admin Dashboard</h2>
-        <label>
-            <input type="checkbox" id="darkModeToggle"/>
-            Dark Mode
-        </label>
-    </header>
-    <nav id="sidebar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <h3>Welcome, Admin!</h3>
-        <p>This is the main content area. Add charts, tables, or reports here.</p>
-    </main>
-    <footer>
-        © 2025 Admin Panel
-    </footer>
-    <!-- <script>
-        document.getElementById("darkModeToggle").onchange= function(){
-            document.body.classList.toggle("dark");
-        }
-    </script> -->
+<!-- Dark mode toggle checkbox -->
+<input type="checkbox" id="darkModeToggle">
+
+<header>
+    <h2>Admin Dashboard</h2>
+    <label for="darkModeToggle">Dark Mode</label>
+</header>
+
+<nav id="sidebar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h3>Welcome, Admin!</h3>
+    <p>This is the main content area. Add charts, tables, or reports here.</p>
+</main>
+
+<footer>
+    © 2025 Admin Panel
+</footer>
+
 </body>
 </html>
