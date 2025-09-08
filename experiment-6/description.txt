@@ -1,29 +1,15 @@
 The page uses HTML5 with a <canvas> for drawing.
-
 The title of the page is "Simple Drawing".
-
 A <style> block adds a black border to the canvas and centers content.
-
 The <canvas> element has id="canvas" with width 500px and height 300px.
-
 There’s a heading <h2> titled "Draw with Mouse".
-
 A Clear button calls the clearCanvas() function.
-
 JavaScript gets the canvas element using getElementById().
-
 ctx = canvas.getContext('2d') enables 2D drawing.
-
 A boolean drawing tracks whether the mouse is pressed.
-
 on mouse down starts a new path and moves the pen to mouse position.
-
 on mouse move draws lines while the mouse is pressed.
-
 on mouse up stops drawing when the mouse button is released.
-
 on mouse out also stops drawing when the cursor leaves the canvas.
-
 clearCanvas() erases everything using clearRect().
-
 The pen is styled with a black color, round edges, and thickness of 2 pixels.
