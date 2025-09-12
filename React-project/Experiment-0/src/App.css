@@ -4,6 +4,18 @@
   padding: 2rem;
   text-align: center;
 }
+/* ...existing code... */
+
+#product-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;   /* keep in one horizontal row */
+  overflow-x: auto;    /* scroll if too many cards */
+}
+
+/* ...existing code... */
 
 .logo {
   height: 6em;
