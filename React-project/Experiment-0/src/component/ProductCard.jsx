@@ -1,11 +1,9 @@
-function ProductCard() {
+function ProductCard({ name, price, stock }) {
   return (
-    <div id="product-card">
-      <div>
-        <div>Product Name</div>
-        <div>Product Price</div>
-        <div>Stock Status</div>
-      </div>
+    <div className="product-card">
+      <h3>{name}</h3>
+      <p>Price: ${price}</p>
+      <p>Status: {stock}</p>
     </div>
   );
 }
