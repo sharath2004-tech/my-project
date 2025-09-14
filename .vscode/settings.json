@@ -1,3 +1,25 @@
 {
-    "liveServer.settings.port": 5501
+        "liveServer.settings.port": 5501,
+        // Avoid Internet schema lookups that can trigger ETIMEDOUT warnings
+        "json.schemas": [
+            {
+                "fileMatch": ["/React-project/**/package.json"],
+                // Use a tiny inline schema to prevent network fetches
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "name": { "type": "string" },
+                        "version": { "type": "string" },
+                        "private": { "type": "boolean" },
+                        "type": { "type": "string" },
+                        "main": { "type": "string" },
+                        "module": { "type": "string" },
+                        "scripts": { "type": "object", "additionalProperties": { "type": "string" } },
+                        "dependencies": { "type": "object", "additionalProperties": { "type": "string" } },
+                        "devDependencies": { "type": "object", "additionalProperties": { "type": "string" } }
+                    },
+                    "additionalProperties": true
+                }
+            }
+        ]
 }
