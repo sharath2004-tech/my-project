@@ -11,9 +11,9 @@ function StudentCard({ id, name, age }) {
 }
 
 const initialStudents = [
-  { id: 1, name: "Alice", age: 20 },
-  { id: 2, name: "Bob", age: 22 },
-  { id: 3, name: "Charlie", age: 19 }
+  { id: 1, name: "sharath", age: 20 },
+  { id: 2, name: "abhi", age: 22 },
+  { id: 3, name: "john", age: 19 }
 ];
 
 function App() {
