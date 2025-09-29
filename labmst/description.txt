@@ -1,0 +1,10 @@
+The project is built using React, a popular JavaScript library for building user interfaces.
+It displays a list of students, where each student has an ID, name, and age.
+Each student is shown in a card format for clear and attractive presentation.
+The cards are styled with colors and rounded corners to look modern and friendly.
+There is an input form at the top of the page to add new students to the list.
+Users can enter a name and age, then click the button to add a new student.
+The student list updates instantly when a new student is added.
+The whole project layout is centered on the screen for a neat appearance.
+The student cards and list have background colors to make them stand out.
+The project is easy to use and helps practice basic React concepts like state, forms, and lists.
