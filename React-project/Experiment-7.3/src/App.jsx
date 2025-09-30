@@ -1,5 +1,5 @@
 import Student from "./classes/Student.js";
-import Teacher from "./classes/Teacher.js";
+impreort Teacher from "./classes/Teacher.js";
 
 function App() {
   const student1 = new Student("Alice", 20, "Computer Science");
