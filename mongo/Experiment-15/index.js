@@ -42,23 +42,8 @@ app.get("/insert-sample", async (req, res) => {
   res.send("Sample products inserted.");
 });
 
-// Get all products
-app.get("/products", async (req, res) => {
-  const products = await Product.find();
-  res.json(products);
-});
-
-// Filter by category
-app.get("/products/category/:cat", async (req, res) => {
-  const products = await Product.find({ category: req.params.cat });
-  res.json(products);
-});
-
-// Filter by variant color
-app.get("/products/by-color/:color", async (req, res) => {
-  const products = await Product.find({ "variants.color": req.params.color });
-  res.json(products);
-});
+// Use MVC routes
+app.use("/products", require("./routes/productRoutes"));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
