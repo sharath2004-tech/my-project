@@ -5,19 +5,19 @@ on:
     branches:
       - main
     paths:
-      - 'React-Projects/Experiment-3.1/**'
+      - 'React-project/Experiment-7.2/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'React-Projects/Experiment-3.1/**'
+      - 'React-project/Experiment-7.2/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: React-Projects/Experiment-3.1
+        working-directory: React-project/Experiment-7.2
 
       permissions:
         contents: read
